@@ -1,0 +1,11 @@
+
+server:
+  port: 8089
+
+spring:
+  datasource:
+    username: root
+    password: 5261429265
+
+upload:
+  dir: /Users/lvjinze/mb/

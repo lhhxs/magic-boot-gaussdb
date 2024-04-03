@@ -1,0 +1,111 @@
+{
+  "properties" : { },
+  "id" : "copy1712156927332d62615",
+  "script" : null,
+  "groupId" : "7bdcc43555b9419caba2ee722e1aa2d3",
+  "name" : "test",
+  "createTime" : null,
+  "updateTime" : 1712156954306,
+  "lock" : null,
+  "createBy" : null,
+  "updateBy" : null,
+  "path" : "/test_master",
+  "method" : "GET",
+  "parameters" : [ ],
+  "options" : [ {
+    "name" : "require_login",
+    "value" : "false",
+    "description" : "该接口需要登录才允许访问",
+    "required" : false,
+    "dataType" : "String",
+    "type" : null,
+    "defaultValue" : null,
+    "validateType" : null,
+    "error" : null,
+    "expression" : null,
+    "children" : null
+  } ],
+  "requestBody" : "",
+  "headers" : [ ],
+  "paths" : [ ],
+  "responseBody" : "{\n    \"code\": 200,\n    \"message\": \"success\",\n    \"data\": \"Hello magic-api\",\n    \"timestamp\": 1712131401953,\n    \"executeTime\": 62\n}",
+  "description" : null,
+  "requestBodyDefinition" : null,
+  "responseBodyDefinition" : {
+    "name" : "",
+    "value" : "",
+    "description" : "",
+    "required" : false,
+    "dataType" : "Object",
+    "type" : null,
+    "defaultValue" : null,
+    "validateType" : "",
+    "error" : "",
+    "expression" : "",
+    "children" : [ {
+      "name" : "code",
+      "value" : "200",
+      "description" : "",
+      "required" : false,
+      "dataType" : "Integer",
+      "type" : null,
+      "defaultValue" : null,
+      "validateType" : "",
+      "error" : "",
+      "expression" : "",
+      "children" : [ ]
+    }, {
+      "name" : "message",
+      "value" : "success",
+      "description" : "",
+      "required" : false,
+      "dataType" : "String",
+      "type" : null,
+      "defaultValue" : null,
+      "validateType" : "",
+      "error" : "",
+      "expression" : "",
+      "children" : [ ]
+    }, {
+      "name" : "data",
+      "value" : "Hello magic-api",
+      "description" : "",
+      "required" : false,
+      "dataType" : "String",
+      "type" : null,
+      "defaultValue" : null,
+      "validateType" : "",
+      "error" : "",
+      "expression" : "",
+      "children" : [ ]
+    }, {
+      "name" : "timestamp",
+      "value" : "1711611609470",
+      "description" : "",
+      "required" : false,
+      "dataType" : "Long",
+      "type" : null,
+      "defaultValue" : null,
+      "validateType" : "",
+      "error" : "",
+      "expression" : "",
+      "children" : [ ]
+    }, {
+      "name" : "executeTime",
+      "value" : "0",
+      "description" : "",
+      "required" : false,
+      "dataType" : "Integer",
+      "type" : null,
+      "defaultValue" : null,
+      "validateType" : "",
+      "error" : "",
+      "expression" : "",
+      "children" : [ ]
+    } ]
+  }
+}
+================================
+return db.select("""
+    select id,name,sex,head_portrait,remarks from t_data_test
+""") ;
