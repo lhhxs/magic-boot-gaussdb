@@ -25,6 +25,8 @@
 		<mysql.connector.version>8.0.32</mysql.connector.version>
 		<aliyun-core.version>4.6.0</aliyun-core.version>
 		<jakarta.version>3.1.0</jakarta.version>
+		<gaussdb.version>8.1.1.1-200</gaussdb.version>
+		<clickhouse.version>0.6.0</clickhouse.version>
 		<dynamic-ds.version>3.5.2</dynamic-ds.version>
 	</properties>
 	<dependencies>
@@ -106,7 +108,13 @@
 		<dependency>
 			<groupId>com.huaweicloud.dws</groupId>
 			<artifactId>huaweicloud-dws-jdbc</artifactId>
-			<version>8.1.1.1-200</version>
+			<version>${gaussdb.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.clickhouse</groupId>
+			<artifactId>clickhouse-jdbc</artifactId>
+			<classifier>all</classifier>
+			<version>${clickhouse.version}</version>
 		</dependency>
 	</dependencies>
 

@@ -4,8 +4,8 @@
   "script" : null,
   "groupId" : "7bdcc43555b9419caba2ee722e1aa2d3",
   "name" : "列表",
-  "createTime" : 1649260172000,
-  "updateTime" : null,
+  "createTime" : null,
+  "updateTime" : 1712162945952,
   "lock" : null,
   "createBy" : null,
   "updateBy" : null,
@@ -25,13 +25,85 @@
     "expression" : null,
     "children" : null
   } ],
-  "requestBody" : null,
+  "requestBody" : "",
   "headers" : [ ],
   "paths" : [ ],
-  "responseBody" : null,
+  "responseBody" : "{\n    \"code\": 402,\n    \"message\": \"凭证已过期\",\n    \"data\": null,\n    \"timestamp\": 1712162840306,\n    \"executeTime\": null\n}",
   "description" : null,
   "requestBodyDefinition" : null,
-  "responseBodyDefinition" : null
+  "responseBodyDefinition" : {
+    "name" : "",
+    "value" : "",
+    "description" : "",
+    "required" : false,
+    "dataType" : "Object",
+    "type" : null,
+    "defaultValue" : null,
+    "validateType" : "",
+    "error" : "",
+    "expression" : "",
+    "children" : [ {
+      "name" : "code",
+      "value" : "402",
+      "description" : "",
+      "required" : false,
+      "dataType" : "Integer",
+      "type" : null,
+      "defaultValue" : null,
+      "validateType" : "",
+      "error" : "",
+      "expression" : "",
+      "children" : [ ]
+    }, {
+      "name" : "message",
+      "value" : "凭证已过期",
+      "description" : "",
+      "required" : false,
+      "dataType" : "String",
+      "type" : null,
+      "defaultValue" : null,
+      "validateType" : "",
+      "error" : "",
+      "expression" : "",
+      "children" : [ ]
+    }, {
+      "name" : "data",
+      "value" : "null",
+      "description" : "",
+      "required" : false,
+      "dataType" : "Object",
+      "type" : null,
+      "defaultValue" : null,
+      "validateType" : "",
+      "error" : "",
+      "expression" : "",
+      "children" : [ ]
+    }, {
+      "name" : "timestamp",
+      "value" : "1712162840306",
+      "description" : "",
+      "required" : false,
+      "dataType" : "Long",
+      "type" : null,
+      "defaultValue" : null,
+      "validateType" : "",
+      "error" : "",
+      "expression" : "",
+      "children" : [ ]
+    }, {
+      "name" : "executeTime",
+      "value" : "null",
+      "description" : "",
+      "required" : false,
+      "dataType" : "Object",
+      "type" : null,
+      "defaultValue" : null,
+      "validateType" : "",
+      "error" : "",
+      "expression" : "",
+      "children" : [ ]
+    } ]
+  }
 }
 ================================
 return db.page("""
